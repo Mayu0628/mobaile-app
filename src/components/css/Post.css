@@ -103,8 +103,20 @@
 @media (max-width: 800px) {
   .user-reviews {
     grid-template-columns: 1fr;
-    width: 80%;
+    width: 100%;
     overflow: scroll;
+  }
+
+  .review-content {
+    width: 80%;
+    height: 30%;
+    height: auto;
+    margin: 10px;
+  }
+
+  .review-content p {
+    overflow-y: scroll;
+    margin: 0;
   }
 
   .no-reviews {
