@@ -1,0 +1,52 @@
+img {
+  width: 100%;
+  height: auto;
+  max-width: 80%;
+  max-height: 180px;
+}
+
+.Card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.event {
+  background-color: #fff;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.event h3,
+.event p {
+  margin: 0;
+}
+
+.event h3,
+p {
+  height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 8px;
+}
+
+p {
+  font-size: 15px;
+}
+
+/* モバイル端末用のスタイル（小さい画面） */
+@media (max-width: 800px) {
+  .Card {
+    grid-template-columns: 1fr;
+    margin: 20px;
+  }
+
+  .event {
+    margin: 0;
+    padding: 10px;
+  }
+}

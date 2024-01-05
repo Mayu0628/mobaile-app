@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+}
+
+.App {
+  background-image: url(./assets/background.jpg);
+}
+
+button {
+  background-color: #b8830d;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #e0b872;
+}

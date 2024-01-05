@@ -1,0 +1,15 @@
+/* ベーススタイル */
+nav {
+  display: flex;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.35);
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 15px;
+}
