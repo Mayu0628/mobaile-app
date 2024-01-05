@@ -6,7 +6,7 @@
 
 .App {
   background-image: url(./assets/background.jpg);
-  padding: 5px;
+  padding-top: 5px;
 }
 
 button {
