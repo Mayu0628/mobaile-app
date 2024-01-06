@@ -6,12 +6,12 @@ import { useParams } from "react-router-dom";
 const CreatePost = () => {
   const [nickname, setNickname] = useState("");
   const [content, setContent] = useState("");
-  const [error, setError] = useState(""); // エラーメッセージ用の状態
+  const [error, setError] = useState("");
   const id = useParams().eventId;
 
   const createPost = async (e) => {
     e.preventDefault();
-    setError(""); // エラーメッセージをリセット
+    setError("");
 
     try {
       await addDoc(collection(db, "createpost"), {
@@ -21,7 +21,7 @@ const CreatePost = () => {
       });
       setNickname("");
       setContent("");
-      alert("投稿が追加されました"); // または他の通知方法を検討
+      alert("投稿が追加されました");
     } catch (error) {
       setError("投稿の追加に失敗しました: " + error.message);
     }

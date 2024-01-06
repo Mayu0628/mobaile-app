@@ -6,7 +6,7 @@ import { db } from "../firebase";
 
 export const Posts = () => {
   const { eventId } = useParams();
-  const [posts, setPosts] = useState([]); // 投稿データを保持するための状態
+  const [posts, setPosts] = useState([]);
 
   useEffect(() => {
     const getPosts = async () => {
@@ -23,10 +23,14 @@ export const Posts = () => {
     if (eventId) {
       getPosts();
     }
-  }, [eventId]); // eventIdが変更されたときにのみ効果を再実行
+  }, [eventId]);
 
   if (posts.length === 0) {
-    return <div className="no-reviews"><h2>口コミはまだありません</h2></div>;
+    return (
+      <div className="no-reviews">
+        <h2>口コミはまだありません</h2>
+      </div>
+    );
   }
 
   return (

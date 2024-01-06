@@ -9,8 +9,8 @@
   background-image: url(./assets/background.jpg);
   padding-top: 25px;
   padding-bottom: 25px;
-  background-repeat: repeat; /* 背景画像を繰り返し描画 */
-  background-size: contain; /* 背景画像のサイズを調整 */
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 button {

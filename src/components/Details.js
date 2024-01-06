@@ -68,8 +68,8 @@ const Details = () => {
         </div>
       </div>
       <div className="ReviewsSection">
-        <Posts className="Posts"/>
-        <CreatePost className="CreatePost"/>
+        <Posts className="Posts" />
+        <CreatePost className="CreatePost" />
       </div>
     </div>
   );

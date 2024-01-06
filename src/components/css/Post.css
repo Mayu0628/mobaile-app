@@ -33,15 +33,14 @@
 
 /* 個々の口コミのスタイル */
 .review-content {
-  border-radius: 5px; /* 角の丸み */
-  /* padding: 5px 10px 5px 10px; 内部の余白 */
-  background-color: #fff; /* 背景色 */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 影のスタイル */
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* 口コミのタイトル（ニックネーム）のスタイル */
 .review-content h3 {
-  color: #b8830d; /* 文字色 */
+  color: #b8830d;
   font-weight: bold;
 }
 
@@ -54,7 +53,7 @@
 /* 口コミ作成フォーム全体のスタイル */
 .create-review {
   width: 25%;
-  height: 300px; /* 最小の高さを設定 */
+  height: 300px;
   padding: 20px;
   background-color: #f8f8f8;
   border-radius: 8px;
@@ -67,32 +66,32 @@
 /* エラーメッセージのスタイル */
 .error {
   color: red;
-  margin-bottom: 10px; /* エラーメッセージと入力フィールド間の余白 */
+  margin-bottom: 10px;
 }
 
 /* ニックネームと内容のラベルと入力フィールド */
 .create-review .nickname,
 .create-review .content {
-  margin-bottom: 15px; /* 各入力フィールド間の余白 */
+  margin-bottom: 15px;
 }
 
 .create-review label {
-  display: block; /* ラベルをブロック要素に */
-  margin-bottom: 5px; /* ラベルと入力フィールド間の余白 */
-  font-weight: bold; /* ラベルの文字を太字に */
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .create-review input[type="text"],
 .create-review textarea {
-  width: 90%; /* 入力フィールドの幅 */
-  padding: 8px; /* 入力フィールドの内部余白 */
-  border: 1px solid #ddd; /* 枠線のスタイル */
-  border-radius: 4px; /* 枠の角の丸み */
+  width: 90%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 .create-review textarea {
-  height: 100px; /* テキストエリアの高さ */
-  resize: vertical; /* 垂直方向のみサイズ変更可能に */
+  height: 100px;
+  resize: vertical;
 }
 
 /* モバイル端末用のスタイル（小さい画面） */
