@@ -1,48 +1,46 @@
 /* 口コミ表示部分 */
 .user-reviews {
-  width: 70%;
-  height: 30%;
+  width: 60%;
+  gap: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
+/* 口コミなし */
 .no-reviews {
   width: 70%;
 }
 
 .review-content {
+  height: 200px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 1rem;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  max-height: 200px;
-  overflow: scroll;
 }
 
 .review-content p {
-  overflow-y: scroll;
+  height: 150px;
+  max-height: 200px;
+  overflow-y: auto;
 }
 
 /* 口コミ表示部分の全体のスタイル */
 .user-reviews {
   display: grid;
-  grid-gap: 1rem;
-  padding: 1rem;
 }
 
 /* 個々の口コミのスタイル */
 .review-content {
-  border: 1px solid #ccc; /* 枠線のスタイル */
   border-radius: 5px; /* 角の丸み */
-  padding: 5px 10px 5px 10px; /* 内部の余白 */
+  /* padding: 5px 10px 5px 10px; 内部の余白 */
   background-color: #fff; /* 背景色 */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 影のスタイル */
 }
 
 /* 口コミのタイトル（ニックネーム）のスタイル */
 .review-content h3 {
-  margin-top: 0; /* 上部のマージンを削除 */
   color: #b8830d; /* 文字色 */
   font-weight: bold;
 }
@@ -50,7 +48,6 @@
 /* 口コミの本文のスタイル */
 .review-content p {
   font-size: 15px;
-  margin-bottom: 0; /* 下部のマージンを削除 */
 }
 
 /* 口コミ投稿部分 */
@@ -62,8 +59,8 @@
   background-color: #f8f8f8;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 10px;
 }
 
@@ -99,21 +96,28 @@
 }
 
 /* モバイル端末用のスタイル（小さい画面） */
-@media (max-width: 800px) {
+@media (max-width: 479px) {
   .user-reviews {
+    display: grid;
     grid-template-columns: 1fr;
-    width: 100%;
-    overflow: scroll;
+    margin: 0;
+    padding: 0;
   }
 
   .review-content {
-    width: 80%;
-    height: 30%;
-    height: auto;
-    margin: 10px;
+    height: 140px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 5px;
+  }
+
+  .review-content h3 {
+    font-size: 15px;
   }
 
   .review-content p {
+    font-size: 13px;
+    height: 100px;
     overflow-y: scroll;
     margin: 0;
   }
@@ -122,7 +126,7 @@
     text-align: center;
   }
 
-  .no-reviews h2{
+  .no-reviews h2 {
     font-size: 19px;
   }
 

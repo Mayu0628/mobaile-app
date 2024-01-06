@@ -1,82 +1,50 @@
-.main {
+/* イベント名 */
+.EventHeader {
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 30px;
   gap: 50px;
+  background-color: #fff;
+  margin-inline: 60px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(151, 123, 38, 0.338);
 }
 
-.main img {
+.EventHeader img {
   width: 300px;
   height: auto;
-  max-width: 300px;
-  max-height: 180px;
 }
 
 /* レビュー部分 */
-.review-body {
+.ReviewsSection {
   display: flex;
   padding: 20px;
   gap: 20px;
-}
-
-.review-title {
-  padding: 50px;
-  display: flex;
-  gap: 40px;
   justify-content: center;
-}
-
-.review-title img {
-  width: 40%;
-  height: auto;
-}
-
-.review-title-contents {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
 }
 
 /* モバイル端末用のスタイル（小さい画面） */
 @media (max-width: 800px) {
-  .main {
+  /* イベント名 */
+  .EventHeader {
     flex-direction: column;
+    margin: 10px;
   }
 
-  .main img {
+  .EventHeader img {
     width: 100%;
   }
 
-  .main h2,
-  p {
-    overflow: scroll;
-    margin: 20px;
-  }
-
-  .review-title {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-
-  .review-title img {
-    width: 100%;
-  }
-
-  .review-title-contents {
-    padding: 20px;
-  }
-
-  .review-title h2,
+  .EventHeader h2,
   p {
     overflow: scroll;
   }
 
-  .review-body {
+  /* レビュー部分 */
+  .ReviewsSection {
     flex-direction: column;
-    align-items: center;
+    margin: 10px;
   }
 }

@@ -59,19 +59,19 @@ const Details = () => {
   const getImageByEventId = (eventId) => images[eventId] || "";
 
   return (
-    <>
-      <div className="main">
+    <div>
+      <div className="EventHeader">
         <img src={getImageByEventId(eventId)} alt={event.title} />
-        <div>
+        <div className="EventInfo">
           <h2>{event.title}</h2>
           <p>{event.date}</p>
         </div>
       </div>
-      <div className="review-body">
-        <Posts />
-        <CreatePost />
+      <div className="ReviewsSection">
+        <Posts className="Posts"/>
+        <CreatePost className="CreatePost"/>
       </div>
-    </>
+    </div>
   );
 };
 
